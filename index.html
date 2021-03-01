@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CSV to XML</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/CSVtoXML.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Header -->
+        <strong class="text-primary">CSV to XML Tool</strong>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Full Page Intro -->
+  <div class="view full-page-intro" style="background-image: url('img/f22_background.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+      <!-- Content -->
+      <div class="container">
+
+        <!--Grid row-->
+        <div class="row wow fadeIn mt-4">
+
+            <!--Card-->
+            <div class="card mt-5" style="width: 80rem">
+
+              <!--Card content-->
+              <div class="card-body">
+
+                  <div class="text-center">
+                    <h5 class="text-left">CSV Input</h5>
+                    <textarea class="form-control" id="tbCSV" rows="4">block_number,task_id,task_description
+                    1,1,Identify organizational IA roles and responsibilities
+                    1,2,Identify and implement implicit deny ACL rules
+                    1,3,Calculate subnet ranges given subnet mask and addresses</textarea>
+                  </div>
+                  <div class="text-center mt-2">
+                    <h5 class="text-left">XML Output</h5>
+                    <textarea  class="form-control"id="tbXML" rows="4"></textarea>
+                  </div>
+
+                  <!-- <div class="md-form">
+                    <i class="fas fa-pencil-alt prefix grey-text"></i>
+                    <textarea type="text" id="form8" class="md-textarea"></textarea>
+                    <label for="form8">Your message</label>
+                  </div> -->
+
+                  <div class="text-center">
+                    <button class="btn btn-indigo" id="btnConvert" onclick="CSVtoXML(tbCSV)">Convert To XML</button>
+                  </div>
+              </div>
+
+            </div>
+            <!--/.Card-->
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+      <!-- Content -->
+
+    </div>
+    <!-- Mask & flexbox options-->
+
+  </div>
+  <!-- Full Page Intro -->
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
+
+      <!--Section: Main info-->
+      <section class="mt-5 wow fadeIn">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4 text-center">
+
+            <img src="img/AETC_Shield_Fancy_small.png" class="img-fluid" alt="AETC shield">
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <!-- Authors -->
+            <h3 class="h3 mb-3">Authors</h3>
+            <hr>
+            <h4>Neel Kotak</h4>
+            <p> neel@gmail.com</p>
+            <h4>Jack Long</h4>
+            <p> jack.richard.long@gmail.com</p>
+            <!-- Authors -->
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </section>
+      <!--Section: Main info-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+    <!--Footer-->
+    <div class="footer py-3">
+      Thank You!
+    </div>
+    <!--/.Footer-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>
