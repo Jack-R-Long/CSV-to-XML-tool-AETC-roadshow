@@ -1,13 +1,33 @@
-<script src="CSVtoXML.js"></script>
+<!-- Exports JS script for CSV to XML conversion -->
+<script src="js/CSVtoXML.js"></script>
 <html>
 <body>
   <text>Convert CSV tasks to XML</text>
 <br/>
+<br/>
+
+<!-- Upload CSV file -->
+<text>Upload a CSV file directly here:</text>
+<input id="fileUpload" type="file" onchange="uploadCSV(this)"/>
+<br/>
+<br/>
+
+
+<text>Or type text in here directly: </text>
+<br/>
+<!-- Allows user to type CSV input as well, prefilled with correct format -->
 <textarea name="" id="tbCSV" cols="85" rows="10">block_number,task_id,task_description
 1,1,Identify organizational IA roles and responsibilities
 1,2,Identify and implement implicit deny ACL rules
 1,3,Calculate subnet ranges given subnet mask and addresses</textarea>
+<br/>
+<br/>
+
+<!-- Text area to improve output -->
+<text>XML output:</text>
+<br/>
 <textarea name="" id="tbXML" cols="85" rows="10"></textarea>
+<br/>
 <br/>
 <button id="btnConvert" onclick="CSVtoXML(tbCSV)">Convert To XML</button>
 </body>

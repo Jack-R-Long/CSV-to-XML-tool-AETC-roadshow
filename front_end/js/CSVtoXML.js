@@ -28,6 +28,23 @@ function CSVtoXML(csvData){
 	tbXML.value = xml;
 }
 
+// function to upload CSV file directly to website
+function uploadCSV(input)
+{
+  // uses file reader to read file and put value into XML text area
+  let file = input.files[0];
+  let reader = new FileReader();
+  reader.readAsText(file);
+  reader.onload = function() {
+    tbCSV.value = reader.result;
+  };
+  reader.onerror = function() {
+    alert("Error reading file, fix file and try again.");
+    return;
+  };
+  CSVtoXML(tbCSV);
+}
+
 /* OLD DOWNLOAD FUNCTIONS, NEED TO BE REDONE
 // Function to download XML
 function downloadData(contentType,data,filename){
