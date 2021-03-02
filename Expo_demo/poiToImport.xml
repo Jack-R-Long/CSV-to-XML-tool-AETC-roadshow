@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<poi_form>
+<tasks>
+	<row>
+		<task_desc>Explain relationship between databases and relational algebra.</task_desc>
+		<task_number>1</task_number>
+		<parent_id>1</parent_id>
+	</row>
+	<row>
+		<task_desc>Explain unions, exclusions, intersections, and cartesian products.</task_desc>
+		<task_number>2</task_number>
+		<parent_id>1</parent_id>
+	</row>
+	<row>
+		<task_desc>Guide students through implementing a simple database.</task_desc>
+		<task_number>1</task_number>
+		<parent_id>2</parent_id>
+	</row>
+	<row>
+		<task_desc>Explain purpose and implementation of 1st through 3rd normal forms.</task_desc>
+		<task_number>1</task_number>
+		<parent_id>3</parent_id>
+	</row>
+	<row>
+		<task_desc>Explain purpose and implementation of Boyce-Codd and 4th normal forms.</task_desc>
+		<task_number>2</task_number>
+		<parent_id>3</parent_id>
+	</row>
+</tasks>
+<objectives>
+	<row>
+		<application>None.</application>
+		<evaluation>Deferred to block test.</evaluation>
+		<inst_guidance>Use material from red textbook to develop understanding of relational algebra.</inst_guidance>
+		<objective_hours>4</objective_hours>
+		<objective_statement>Identify fundamentals of relational algebra. Demonstrate understanding of unions, exclusions, intersections, and cartesian products.</objective_statement>
+		<unit_number>1</unit_number>
+	</row>
+	<row>
+		<application>None.</application>
+		<evaluation>Demonstrate functioning database with three tables of ten records each.</evaluation>
+		<inst_guidance>Describe the basics of a relational database to students using tutorials from W3Schools.</inst_guidance>
+		<objective_hours>4</objective_hours>
+		<objective_statement>Identify fundamental components of a relational database. Demonstrate understanding of keys, records, and columns.</objective_statement>
+		<unit_number>2</unit_number>
+	</row>
+	<row>
+		<application>None.</application>
+		<evaluation>Correct provided database in accordance with 4th Normal Form.</evaluation>
+		<inst_guidance>Describe purpose and rules of normalization using tutorials from W3Schools.</inst_guidance>
+		<objective_hours>8</objective_hours>
+		<objective_statement>Identify purpose and rules of normalization up to at least the 4th Normal Form</objective_statement>
+		<unit_number>2</unit_number>
+	</row>
+</objectives>
+<unit>
+	<row>
+		<unit_number>1</unit_number>
+		<unit_description>Relational Algebra</unit_description>
+		<parent_blk>2</parent_blk>
+	</row>
+	<row>
+		<unit_number>2</unit_number>
+		<unit_description>Database Administration</unit_description>
+		<parent_blk>2</parent_blk>
+	</row>
+
+</unit>
+<block>
+	<row>
+		<block_hours>16</block_hours>
+		<max_enrl_blk>16</max_enrl_blk>
+		<min_enrl_blk>6</min_enrl_blk>
+		<prep_time_hours_blk>2</prep_time_hours_blk>
+		<security_class_id>UNCLASS</security_class_id>
+		<block_number>2</block_number>
+		<block_desc>Relational Databases</block_desc>
+	</row>
+</block>
+</poi_form>
