@@ -3,37 +3,21 @@ html,
 body,
 .view {
   height: 100%; }
+body {
+  padding-bottom: 70px;
+}
 
-@media (max-width: 740px) {
-  .full-page-intro {
-    height: 1000px; } }
-
-/* Half Page Carousel itself*/
-.carousel {
-  height: 50%; }
-  .carousel .carousel-inner {
-    height: 100%; }
-    .carousel .carousel-inner .carousel-item,
-    .carousel .carousel-inner .active {
-      height: 100%; }
-
-/* Adjustment for mobile devices*/
-@media (max-width: 776px) {
-  .carousel {
-    height: 100%; } }
-
-/* Navbar animation */
-.navbar {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.top-nav-collapse {
-  background-color: #1C2331; }
-
-/* Adding color to the Navbar on mobile */
-@media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #1C2331; } }
-
+.primary-nav {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+ }
+/* New class to shrink navbar on scroll */
+.shrink {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  min-height: 55px !important;
+}
 /* Footer color for sake of consistency with Navbar */
-.page-footer {
+footer {
   background-color: #1C2331; }

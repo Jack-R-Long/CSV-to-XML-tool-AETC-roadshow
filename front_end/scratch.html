@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ICIS New Gui</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/CSVtoXML.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="navbar sticky-top navbar-light bg-light primary-nav" id="primary-nav">
+            <a href="#" class="navbar-brand">AETC Roadshow Demo</a>
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Tool</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Authors</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Main -->
+    <main role="main" class="container">
+        <!-- File Upload and Convert -->
+        <div class="container mt-4">
+            <div class="row align-items-start">
+
+                <!-- Column One -->
+                <div class="col">
+                    <!-- File Upload Button -->
+                    <div class="container text-center">
+                        <h5 class="text-center">Upload CSV</h5>
+                        <input class="btn btn-info" id="fileUpload" type="file" onchange="uploadCSV(this)"></input>
+                    </div>
+                    <!-- CSV Upload -->
+                    <div class="container text-center mt-4">
+                        <h5>CSV Input</h5>
+                        <textarea class="form-control" id="tbCSV" rows="10">block_number,task_id,task_description
+                        1,1,Identify organizational IA roles and responsibilities
+                        1,2,Identify and implement implicit deny ACL rules
+                        1,3,Calculate subnet ranges given subnet mask and addresses</textarea>
+                      </div>
+                </div>
+
+                <!-- Column Two -->
+                <div class="col">
+                    <!-- Convert Button -->
+                    <div class="container text-center">
+                        <h5 class="text-center">Convert to XML</h5>
+                        <button class="btn btn-info" id="btnConvert" onclick="CSVtoXML(tbCSV)">Convert</button>
+                    </div>
+                    <!-- XML Output -->
+                    <div class="container text-center mt-4">
+                        <h5>XML Output</h5>
+                        <textarea  class="form-control"id="tbXML" rows="6"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Authors Section -->
+        <div class="container bg-light">
+            <!--Section: Main info-->
+            <section class="mt-5 wow fadeIn">
+              <!--Grid row-->
+              <div class="row">
+                <div class="col-md-6 mb-4 text-center">
+                  <img src="img/AETC_Shield_Fancy_small.png" class="img-fluid" alt="AETC shield">
+                </div>
+                <div class="col-md-6 mb-4">
+                  <!-- Authors -->
+                  <h3 class="h3 mb-3">Authors</h3>
+                  <hr>
+                  <h4>Neel Kotak</h4>
+                  <p> neelkotak13@gmail.com</p>
+                  <h4>Jack Long</h4>
+                  <p> jack.richard.long@gmail.com</p>
+                  <!-- Authors -->
+                </div>
+              </div>
+              <!--Grid row-->
+            </section>
+            <!--Section: Main info-->
+          </div>
+
+    </main>
+
+    <!--Footer-->
+    <footer class="navbar fixed-bottom">
+        <div class="container text-center">
+            <span class="text-muted"> Thank you!</span>
+        </div>
+    </footer>
+    <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
