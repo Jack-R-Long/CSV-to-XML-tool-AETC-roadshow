@@ -21,3 +21,8 @@ body {
 /* Footer color for sake of consistency with Navbar */
 footer {
   background-color: #1C2331; }
+
+.icon {
+  width: 10%;
+  height: 10%;
+}
