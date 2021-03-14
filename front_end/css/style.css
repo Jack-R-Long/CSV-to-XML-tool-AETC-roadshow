@@ -20,9 +20,28 @@ body {
 }
 /* Footer color for sake of consistency with Navbar */
 footer {
-  background-color: #1C2331; }
-
+  background-color: #1C2331; 
+}
+/* Icon for navbar */
 .icon {
   width: 10%;
   height: 10%;
+}
+/* Quick fix for jumbotron spacing */
+.tronfix{
+  margin-bottom: 0;
+}
+/* Parallax lol */
+.parallax {
+  /* The image used */
+  background-image: url("../img/f22_background.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
