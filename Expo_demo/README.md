@@ -10,8 +10,12 @@ cd /var/lib/postgresql
 ### Clone the repo ###
 git clone https://github.com/amundy14/Expo_demo.git
 
+### Ensure postgresql service is running ###
+sudo service postgresql start
+
 ### Load the database ###
 psql -a -q -f databaseInit.sql
+
 ### Access and query the database ###
 psql
 select * from [table_name];
